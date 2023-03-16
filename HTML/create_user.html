@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursor</title>
+
+    
+    <style>
+
+        body {
+            height: 100%;
+            margin: 0;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            background-image: url('images/bg.png');
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
+        .login {
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #form-login{
+            background-color: #23243c;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-login{
+            margin:10px;
+            width:250px;
+            height: 30px;
+            background-color: #434459;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            color:#fff;
+            padding:5px 10px;
+        }
+
+        .submit-login {
+            text-transform: uppercase;
+            width:150px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            margin:5px;
+            font-weight:600;
+            background-color:#3b70e0;
+            color:#fff;
+            font-size:12px;
+            font-family: poppins;
+            letter-spacing: 1px;
+        }
+
+        #login-header{
+            font-family:'Courier New';
+            color: #ececec;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            margin:20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+        }
+        .input-login::placeholder{
+            color:#727383;
+        }
+
+
+        .back-login{
+            color:#62627d;
+            margin:20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #62627d;
+        }
+
+        p{
+            color: red;
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    
+    <div id= "login" class="login">
+
+        <h1 id="login-header">CURSOR</h1>
+        <form id="form-login">
+            <p id="error-logger"></p>
+            <input type="text" id="user" name="user" class="input-login" placeholder="Usuario" required><br>
+            <input type="password" id="password" name="password" class="input-login" placeholder="Contraseña" required><br>
+            <input type="email" id="email" name="email" class="input-login" placeholder="Email" required><br>
+            <input type="text" id="id" name="id" class="input-login" placeholder="Cédula" required><br>
+            <input type="text" id="name" name="name" class="input-login" placeholder="Nombre Completo" required><br>
+            <input type="button" id="submit" value="Crear Usuario" class="submit-login">
+        </form>
+
+        <a class="back-login"href="login.html">Volver al login</a>
+
+    </div>
+
+</body>
+
+<script src="js/create_user.js"></script>
+
+</html> 

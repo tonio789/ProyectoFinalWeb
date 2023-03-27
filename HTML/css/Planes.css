@@ -11,42 +11,31 @@ body{
 }
 
 .navbar{
-
     margin: 30px auto;
     display: flex;
     align-items: center;
-
 }
 
 ul{
-
     flex:1;
     text-align: right;
-
 }
 
 ul li{
-
     display: inline-block;
     list-style: none;
     margin: 15 px;
     margin-left: 52px;
     margin-right: 5px;
     margin-top: -25px;
-    
-    
 }
 
 ul li a {
-    
     text-decoration: none;
     color: #ffffff;
     padding: 0 10px;
     position:relative;
     background-color: transparent;
-
-
-
 }
 
 ul li a::after{
@@ -66,37 +55,30 @@ ul li a:hover::after{
 }
 
 .navbar img{
-
     height: 80px;
     margin-left: 187px;
     margin-top: 40px;
 }
 
 .navbar-icons img{
-
     height: 25px;
     margin-left: 40px;
     cursor: pointer;
 }
 
 .navbar-icons{
-
     margin-left: 40px;
     margin-right: 150px;
     margin-top:-40px;
 }
 
-
-
 #planes{
-
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 200px ;
 }
 .precio{
-
     position: relative;
 }
 .dolar{
@@ -106,22 +88,18 @@ ul li a:hover::after{
 }
 
 h4{
-
     font-size: 30px;
 }
 
 .num{
-
     font-size: 60px;
     color: #b86ef0;
 }
 .num1{
-
     font-size: 60px;
     color: #470977;
 }
 .num2{
-
     font-size: 60px;
     color: #6416A0;
 }
@@ -130,47 +108,33 @@ h4{
     box-shadow:1px 1px 12px #ccc;
 }
 .cuadroarriba{
-
     width: 234px;
     height: 40px;
     background-color: #ffff;
     position: absolute;
     top: -40px;
     left: -0.1px;
-    
 }
-
 .cuadroabajo{
-
     width: 234px;
     height: 40px;
     background-color: #ffff;
     position: absolute;
     bottom: -40px;
     left: -0.1px;
-    
 }
-
 .frecuencia{
-
     color:rgb(136, 136, 136);
     font-size: 13px;
-    
-
 }
-
 .tabla{
-
     background-color: #ffff;
     padding: 50px;
 }
-
-
 .descripcion {
     color:rgb(136, 136, 136);
     font-size: 15px;
 }
-
 a{
     background : #6416A0;
     color:#fff;
@@ -178,7 +142,5 @@ a{
     padding: 8px 22px;
     margin-top:20px;
     display:inline-block;
-
-
 } 
 

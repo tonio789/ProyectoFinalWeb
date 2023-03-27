@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .header {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .navbar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    flex: 1;
+    text-align: right;
+  }
+  
+  ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #4348a3;
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  ul li a::after {
+    content: "";
+    width: 0;
+    height: 10px;
+    background: #4348a3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px;
+    transition: 0.5s;
+  }
+  
+  ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar img {
+    height: 80px;
+    margin-left: 8px;
+    margin-top: 40px;
+  }
+  
+  .navbar-icons img {
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .navbar-icons {
+    margin-left: 10px;
+    margin-top: -40px;
+  }
+  
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .filters select {
+    width: 180px;
+    height: 45px;
+    background: white;
+    border: 2px solid #ddd;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #4348a3;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  .filters select:hover {
+    border-color: #4348a3;
+  }
+  
+  .filters select:focus {
+    outline: none;
+  }
+  
+  .filters .search-box {
+    display: flex;
+    align-items: center;
+  }
+  .filters .search-box input:focus {
+    outline: none;
+    border-color: #4348a3;
+  }
+  
+  .filters .search-box img {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .filters .search-box img:hover {
+    transform: scale(1.1);
+  }
+  .filters .search-box input {
+    height: 45px;
+    width: 300px;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    color: #4348a3;
+    transition: border-color 0.3s;
+    background: transparent;
+  }
+  .filters .search-box input:focus {
+    outline: none;
+    border-color: #4348a3;
+  }
+  .filters .search-btn {
+    display: inline-block;
+    background-color: #4348a3;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+  }
+  .filters .search-btn:hover {
+    background-color: #3a3f9a;
+  }
+  
+
+
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    margin-right: 10px;
+  }
+  
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .course {
+    margin: 15px;
+    width: calc(33.3333% - 30px);
+    box-sizing: border-box;
+  }
+  
+  .course img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .course p {
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rating span:first-child {
+    margin-right: 5px;
+  }
+  
+  .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4348a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .course img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: scale-down;
+    
+  }
+  .course .buy-btn {
+    width: 100%; 
+    height: 40px;
+    margin: 0 auto; 
+  }
+  
